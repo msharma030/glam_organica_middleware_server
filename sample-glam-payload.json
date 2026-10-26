@@ -1,0 +1,28 @@
+{
+    "CustomerName": "Test Customer",
+    "CustomerEmailID": "test@example.com",
+    "CustomerPhoneNo": "9999999999",
+    "CouponCode": "",
+    "CouponValue": 0,
+    "OrderTotalAmount": 1200,
+    "TotalGSTAmount": 216,
+    "TotalShippingAmount": 216,
+    "PaymentOption": "Online",
+    "PaymentID": "PAY-1001",
+    "TransactionID": "TXN-1001",
+    "TransactionStatus": "Success",
+    "ShippingAddress": {
+        "CustomerShippingAddressName": "Test Customer",
+        "CustomerShippingAddressPhoneNo": "9999999999",
+        "CustomerShippingAddressEmailID": "test@example.com",
+        "CustomerShippingAddressPinCode": "110001",
+        "CustomerShippingAddressFullAddress": "House 10, Main Road",
+        "CustomerShippingAddressLocality": "Connaught Place",
+        "CustomerShippingAddressCity": "New Delhi",
+        "CustomerShippingAddressState": "Delhi"
+    },
+    "Products": [
+        { "ProductSKU": "F6007", "ProductQuantity": 2, "ProductSalePrice": 500, "ProductMRP": 600 },
+        { "ProductSKU": "B3002", "ProductQuantity": 1, "ProductSalePrice": 200, "ProductMRP": 250 }
+    ]
+}

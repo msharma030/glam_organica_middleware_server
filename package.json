@@ -1,0 +1,14 @@
+{
+  "name": "aisensy-glam-middleware",
+  "version": "3.0.0",
+  "description": "Joins AiSensy flow API call + order.placed + payment.captured into one Glam Organica order",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "mock": "node mock-glam.js",
+    "simulate": "node simulate.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
