@@ -78,13 +78,8 @@ This creates REAL orders at Glam. Never hardcode the credentials in files.
 - `$env:MOCK_STRICT="true"; npm run mock` → also rejects empty locality/city/state (default: only warns)
 - Mock login: user `glamorganica`, password `test-password` (`MOCK_USER` / `MOCK_PASS` to change)
 
-## Failed sends
-A failed call to Glam keeps the order as `send_failed`. Re-send with:
-`curl.exe -X POST http://localhost:3000/admin/retry/<orderId>`
 
 ## Known limits
 - Same customer, same cart value, within 30 min → can pair a payment with the wrong order (no shared key in the webhooks).
-- `$customerAddress` is one string: pincode is extracted, but locality/city/state are sent empty.
 - `ProductSKU` = the catalog Content ID (`product_retailer_id`). Must equal Glam's SKU.
 - GST = 18% inclusive of sale price; shipping = 0; MRP = sale price (change in `logic.js` → CONFIG / buildGlamBody).
-- Webhook signature (`X-AiSensy-Signature`) is not verified.
